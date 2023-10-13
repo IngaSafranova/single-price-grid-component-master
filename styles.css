@@ -15,8 +15,7 @@ body {
   background-color: hsl(204, 43%, 93%);
 }
 .card {
-  width: 750px;
-  height: 500px;
+  
   border-radius: 20px;
   box-shadow: 3px 4px 8px 1px rgba(0, 0, 0, 0.35);
   /*To hide any child components parts (coners in this instans) that overflow the main container*/
@@ -37,8 +36,9 @@ body {
 }
 #bottom-left {
   display: inline-block;
-  width: 50%;
+  /* width: 50%; */
   height: 100%;
+  width: 100%;
   padding: 30px;
 
   /*To put the div into top spot into parent div*/
@@ -47,7 +47,8 @@ body {
 }
 #bottom-right {
   display: inline-block;
-  width: 50%;
+  /* width: 50%; */
+  width: 100%;
   height: 100%;
   padding: 30px;
   vertical-align: top;
@@ -98,4 +99,14 @@ ul {
   list-style: none;
   opacity: 0.8;
   font-size: 0.9rem;
+}
+
+@media(min-width : 576px) {
+  .card {
+     width: 550px;
+  height: 500px; 
+  }
+  #bottom-left, #bottom-right {
+    width: 50%;
+  }
 }
