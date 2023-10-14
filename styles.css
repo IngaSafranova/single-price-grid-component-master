@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  /* makes the min height of page full screen*/
   min-height: 100vh;
   display: flex;
   flex-direction: column;
